@@ -1,0 +1,103 @@
+:root {
+    --dark: #072f54;
+    --purple: rgb(237, 132, 240);
+    --background: #000203;
+    --whitish: rgba(225, 202, 226, 0.3);
+  }
+
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: var(--dark);
+}
+
+/* main {
+    display: flex;
+} */
+
+header {
+    text-align: center;
+    color: var(--purple);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 56px;
+    margin-top: 64px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90;
+    flex-direction:row;
+    justify-content: center;
+    max-width:2500px;
+}
+
+.code-card {
+    color: var(--purple);
+    border: dotted 4px var(--whitish);
+    width: 30rem;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.card-header {
+    color: var(--purple);
+    font-size: x-large;
+    border: solid 3px var(--whitish);
+    border-radius: 8px;
+    padding: 12px;
+    padding-top: 11px;
+    line-height: 27px;
+    position: relative;
+    margin: 0px 16px;
+    margin-top: -20px; 
+    background-color: var(--dark);
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    }
+    
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 0px 4px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+    }
+
+.code-card p{
+    padding-left: 16px;
+}
+
+.code {
+    width: fit-content
+}
+
+.code-background {
+    background-image:linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+    );
+    border-radius: 4px;
+    padding: 4px;
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin: 0px 16px 16px 16px;
+    }
+
+footer {
+    color: var(--purple);
+    text-align: center;
+}
+
+/* @media screen and (max-width: 768px) {
+    .code-card {
+        width:100rem;
+    }
+} */
